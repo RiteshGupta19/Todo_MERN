@@ -7,13 +7,11 @@ const {
   deleteTodo
 } = require('../controllers/todoController');
 
-// GET all todos, POST new todo
-router.route('/')
+ router.route('/')
   .get(getTodos)
   .post(createTodo);
 
-// PUT update todo, DELETE todo
-router.route('/:id')
+ router.route('/:id')
   .put(updateTodo)
   .delete(deleteTodo);
 

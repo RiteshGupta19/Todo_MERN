@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import TodoItem from "./components/TodoItem";
 import "./App.css";
 
-// Load base URL from .env
-const API_URL = import.meta.env.VITE_API_BASE_URL;
+ const API_URL = import.meta.env.VITE_API_BASE_URL;
 
 function App() {
   const [todos, setTodos] = useState([]);
